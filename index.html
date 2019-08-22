@@ -48,6 +48,51 @@
     <div id="cars" class="row">
 
     </div>
+
+    <div class="row justify-content-center">
+      <form onsubmit="app.controllers.houseController.addHouse(event)" class="col-5">
+        <h1>Add a new house!</h1>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="number" class="form-control" name="price" id="price" placeholder="Type in a price" required>
+        </div>
+        <div class="form-group">
+          <label for="sqfeet">Square Footage</label>
+          <input type="number" class="form-control" name="sqfeet" id="sqfeet" placeholder="Type in a square footage"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="year">Year Built</label>
+          <input type="number" class="form-control" name="year" id="year" placeholder="Type in a year" required>
+        </div>
+        <div class="form-group">
+          <label for="imgUrl">Image</label>
+          <input type="text" class="form-control" name="imgUrl" id="imgUrl" placeholder="Type in an image address"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="bedrooms">Bedrooms</label>
+          <input type="number" class="form-control" name="bedrooms" id="bedrooms"
+            placeholder="Type in number of bedrooms" required>
+        </div>
+        <div class="form-group">
+          <label for="bathrooms">Bathrooms</label>
+          <input type="number" class="form-control" name="bathrooms" id="bathrooms"
+            placeholder="Type in number of bathrooms" required>
+        </div>
+        <div class="form-group">
+          <label for="stories">Stories</label>
+          <input type="number" class="form-control" name="stories" id="stories" placeholder="Type in number of stories"
+            required>
+        </div>
+      </form>
+    </div>
+    <div id="house" class="row">
+
+
+    </div>
+
+
   </div>
 
   <script src="app/main.js" type="module"></script>
